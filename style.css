@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,9 +44,9 @@ a {
     padding: 3px 10px 3px 10px;
 }
 .menu {
-    box-shadow: 1px 1px 7px rgb(85, 83, 83);
+    box-shadow: 1px 1px 7px rgb(130, 125, 125);
     background-color: rgb(248, 246, 246);
-    padding: 4px 0px 4px 0px;
+    padding: 8px 0px 8px 0px;
 }
 .menu-container {
     margin: 0px 40px 0px 40px;
@@ -54,3 +58,25 @@ a {
     font-size: 12px;
     padding: 5px;
 } */
+
+.display-img {
+    margin: 0px 40px 0px 40px;
+    height: 300px;
+}
+.display-img .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slide 6s infinite;
+}
+@keyframes slide{
+    0% {
+        background-image: url(./Image/premierleaguel.avif);
+    }
+    50% {
+        background-image: url(./Image/creditcard.png);
+    }
+    100% {
+        background-image: url(./Image/giftcard.png);
+    }
+}
